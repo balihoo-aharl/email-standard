@@ -1,0 +1,4 @@
+assets/*
+tmp
+tmp/*
+config/mailgun.js

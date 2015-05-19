@@ -1,0 +1,224 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta name="viewport" content="width=device-width"/>
+
+		<title>{{subject.subject}}</title>
+
+		<!-- build:css inline ink.css -->
+		<link rel="stylesheet" href="ink.css"> <!-- Ink Framework -->
+    <!-- /build -->
+    <!-- build:css inline styles.css -->
+		<link rel="stylesheet" href="styles.css" /> <!-- Author Styles -->
+		<!-- /build -->
+		<style type="text/css">
+
+		</style>
+
+	</head>
+	<body>
+		<table class="body">
+			<tr>
+				<td class="center" align="center" valign="top">
+					<center>
+					<!-- Email Content -->
+					<table id="content" class="container">
+						<tr>
+							<td>
+
+								{{#boolHeaderToggle}}
+								{{#header}}
+								<!-- Masthead -->
+								<table id="masthead" class="row">
+									<tr>
+										<td class="wrapper">
+											<table class="six columns">
+												<tr>
+													<td class="left-text-pad">
+														{{#logo}}
+														<a href="{{logoURL}}" target="_blank">
+															<img src="{{logo}}" title="{{logoMeta}}" alt="{{logoMeta}}"/>
+														</a>
+														{{/logo}}
+														{{^logo}}
+															<a href="{{logoURL}}" title="{{logoMeta}}" target="_blank">
+																<h1>{{locationName}}</h1>
+															</a>
+														{{/logo}}
+													</td>
+													<td class="expander"></td>
+												</tr>
+											</table>
+										</td>
+										<td class="wrapper last">
+											<table class="six columns">
+												<tr>
+													<td class="right-text-pad">
+														<h2 class="right">{{text}}</h2>
+													</td>
+													<td class="expander"></td>
+												</tr>
+											</table>
+										</td>
+									</tr>
+								</table><!-- /#masthead -->
+								{{/header}}
+								{{/boolHeaderToggle}}
+
+								{{#boolHeroToggle}}
+								{{#hero}}
+								<!-- Hero -->
+								<table id="hero" class="row">
+									<tr>
+										<td class="wrapper last">
+											<table class="twelve columns">
+												<tr>
+													<td class="text-pad">
+														{{#imageURL}}
+														<a href="{{imageURL}}" target="_blank">
+														{{/imageURL}}
+															<img src="{{image}}" title="{{{imageMeta}}}" alt="{{{imageMeta}}}" />
+														{{#imageURL}}
+														</a>
+														{{/imageURL}}
+													</td>
+													<td class="expander"></td>
+												</tr>
+											</table>
+										</td>
+									</tr>
+								</table><!-- /#hero -->
+								{{/hero}}
+								{{/boolHeroToggle}}
+
+								{{#boolBodyToggle}}
+								{{#body}}
+								<!-- Body Content -->
+								<table id="bodycontent" class="row">
+									<tr>
+										<td class="wrapper last">
+											<table class="twelve columns">
+												<tr>
+													<td class="text-pad">
+														{{{bodyCopy}}}
+													</td>
+													<td class="expander"></td>
+												</tr>
+											</table>
+										</td>
+									</tr>
+								</table><!-- /#bodycontent -->
+								{{/body}}
+								{{/boolBodyToggle}}
+
+								{{#boolCTAToggle}}
+								{{#cta}}
+								<!-- CTA -->
+								<table id="ctatext" class="row">
+									<tr>
+										<td class="wrapper last">
+											<table class="twelve columns">
+												<tr>
+													<td class="text-pad">
+														<table class="button">
+															<tr>
+																<td>
+																	<a href="{{btnURL}}">{{btnCopy}}</a>
+																</td>
+															</tr>
+														</table>
+													</td>
+													<td class="expander"></td>
+												</tr>
+											</table>
+										</td>
+									</tr>
+								</table><!-- CTA -->
+								{{/cta}}
+								{{/boolCTAToggle}}
+
+								{{#boolFooterToggle}}
+								<!-- Footer -->
+								<table id="footer" class="row">
+									<tr>
+										<td class="wrapper">
+											<table class="four columns">
+												<tr>
+													<td class="left-text-pad">
+														<a href="http://maps.google.com/maps?f=q&source=s_q&hl=en&geocode=&q= {{_Address}}, {{_City}},{{_StateProvinceCode}},{{_PostalCode}}" title="Get Directions" target="_blank"><img width="186" height="106" border="0" alt="Google Map: {{_Address}}, {{_City}}, {{_StateProvinceCode}}, {{_PostalCode}}" title="Google Map: {{_Address}}, {{_City}}, {{_StateProvinceCode}}, {{_PostalCode}}" src="http://maps.google.com/maps/api/staticmap?center={{_Address}}, {{_City}}, {{_StateProvinceCode}}, {{_PostalCode}}&amp;zoom=13&amp;size=180x100&amp;maptype=roadmap&amp;{{_Address}}, {{_City}}, {{_StateProvinceCode}}, {{_PostalCode}}&amp;sensor=false&amp;markers={{_Address}}, {{_City}}, {{_StateProvinceCode}}, {{_PostalCode}}"></a>
+													</td>
+													<td class="expander"></td>
+												</tr>
+											</table>
+										</td>
+										<td class="wrapper">
+											<table class="four columns">
+												<tr>
+													<td>
+														<p>
+															<strong>Location</strong><br />
+															<img src="http://static.balihoo.com/EmailTemplates/Balihoo/Promo_v0-1/homeIcon.jpg" /> {{_Address}}<br /> {{_City}}, {{_StateProvinceCode}} {{_PostalCode}}<br />
+															<img src="http://static.balihoo.com/EmailTemplates/Balihoo/Promo_v0-1/mapIcon.jpg" /> <a href="http://maps.google.com/maps?f=q&source=s_q&hl=en&geocode=&q= {{_Address}}, {{_City}},{{_StateProvinceCode}},{{_PostalCode}}" title="Get Directions" target="_blank" style="text-decoration:none;color:#666666">Get Directions</a>
+														</p>
+													</td>
+													<td class="expander"></td>
+												</tr>
+											</table>
+										</td>
+										<td class="wrapper last">
+											<table class="four columns">
+												<tr>
+													<td class="right-text-pad">
+														<p>
+															<strong>Contact</strong><br />
+															{{#_BusinessPhone}}<img src="http://static.balihoo.com/EmailTemplates/Balihoo/Promo_v0-1/phoneIcon.jpg" /> {{_BusinessPhone}}<br />{{/_BusinessPhone}}
+															{{#_WebsiteUrl}}<img src="http://static.balihoo.com/EmailTemplates/Balihoo/Promo_v0-1/siteIcon.jpg" /><a href="{{_WebsiteUrl}}">Website</a><br />{{/_WebsiteUrl}}
+															{{#_Email}}<img src="http://static.balihoo.com/EmailTemplates/Balihoo/Promo_v0-1/emailIcon.jpg" /> <a href="mailto:{{_Email}}" title="Email Us" >Email Us</a>{{/_Email}}
+														</p>
+														<p class="social-icons">
+															{{#_Twitter}}<a href="{{_Twitter}}" title="Follow us on Twitter" target="_blank"><img src="http://static.balihoo.com/EmailTemplates/Balihoo/Promo_v0-1/twitterIcon.jpg" /></a>{{/_Twitter}}
+															{{#_Facebook}}<a href="{{_Facebook}}" title="Find us on Facebook" target="_blank"><img src="http://static.balihoo.com/EmailTemplates/Balihoo/Promo_v0-1/fbIcon.jpg" /></a>{{/_Facebook}}
+															{{#_Instagram}}<a href="{{_Instagram}}" title="Follow us on Instagram" target="_blank"><img src="http://static.balihoo.com/EmailTemplates/Balihoo/Promo_v0-1/instagramIcon.jpg" /></a>{{/_Instagram}}
+															{{#_Pinterest}}<a href="{{_Pinterest}}" title="Find us on Pinterest" target="_blank"><img src="http://static.balihoo.com/EmailTemplates/Balihoo/Promo_v0-1/pinIcon.jpg" /></a>{{/_Pinterest}}
+															{{#_YouTube}}<a href="{{_Youtube}}" title="Watch us on YouTube" target="_blank"><img src="http://static.balihoo.com/EmailTemplates/Balihoo/Promo_v0-1/youTubesIcon.jpg" /></a>{{/_YouTube}}
+														</p>
+													</td>
+													<td class="expander"></td>
+												</tr>
+											</table>
+										</td>
+									</tr>
+								</table><!-- /#footer -->
+								{{/boolFooterToggle}}
+
+								{{#boolDisclaimerToggle}}
+								{{#disclaimer}}
+								<!-- disclaimer -->
+								<table id="disclaimer" class="row">
+									<tr>
+										<td class="wrapper last">
+											<table class="twelve columns">
+												<tr>
+													<td class="text-pad">
+														{{{disclaimerText}}}
+													</td>
+													<td class="expander"></td>
+												</tr>
+											</table>
+										</td>
+									</tr>
+								</table><!-- /#disclaimer -->
+								{{/disclaimer}}
+								{{/boolDisclaimerToggle}}
+
+							</td>
+						</tr>
+					</table><!-- /#content -->
+
+					</center>
+				</td>
+			</tr>
+		</table>
+	</body>
+</html>

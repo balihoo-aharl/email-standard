@@ -1,0 +1,33 @@
+/* Author Styles
+ *
+ * Contributors:
+ *    aharl
+ *
+ */
+
+h1.right,
+h2.right,
+h3.right,
+h4.right,
+h5.right,
+h6.right,
+p.right {
+	text-align: right;
+}
+
+body {
+  background-color: #eeeeee; /* This will not show in some email clients
+}
+
+.body {
+  background-color: #eeeeee;
+}
+
+#content {
+  background-color: #ffffff;
+}
+
+.social-icons a {
+	display: block;
+	float: left;
+}

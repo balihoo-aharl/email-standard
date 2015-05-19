@@ -1,0 +1,48 @@
+{
+	"_LocationName": "Balihoo",
+	"_Address": "404 S. 8th St, Ste 300",
+	"_City": "Boise",
+	"_StateProvinceCode": "ID",
+	"_PostalCode": "83702",
+	"_BusinessPhone": "208-555-5555",
+	"_WebsiteUrl": "http://www.balihoo.com",
+	"_Email": "sales@balihoo.com",
+	"_Twitter": "https://twitter.com/balihoo",
+	"_Facebook": "https://www.facebook.com/Balihoo",
+	"_Instagram": "http://instagram.com/",
+	"_Pinterest": "http://www.pinterest.com/",
+	"_YouTube": "http://www.youtube.com/",
+	"subject": {
+		"_subject": "Greeting from {{_LocationName}}",
+		"subject": "Greeting from Balihoo"
+	},
+	"boolHeaderToggle": true,
+	"header": {
+		"logo": "http://placehold.it/250x60&text=Brand+Logo",
+		"logoURL": "http://www.example.com",
+		"logoMeta": "Logo Meta",
+		"_text": "Header {{_City}}",
+		"text": "Header Boise"
+	},
+	"boolHeroToggle": true,
+	"hero": {
+		"image": "http://placehold.it/580x200&text=Hero+Image",
+		"imageURL": "http://www.example.com",
+		"imageMeta": "Hero Image Meta"
+	},
+	"boolBodyToggle": true,
+	"body": {
+		"_bodyCopy": "<p>Sample Body Copy</p><ul>With a list<li>{{_City}}</li><li>{{_LocationName}}</li></ul>",
+		"bodyCopy": "<p>Sample Body Copy</p><ul>With a list<li>Boise</li><li>Balihoo</li></ul>"
+	},
+	"boolCTAToggle": true,
+	"cta": {
+		"btnCopy": "CTA Button Copy",
+		"btnURL": "http://www.example.com"
+	},
+	"boolFooterToggle": true,
+	"boolDisclaimerToggle": true,
+	"disclaimer": {
+		"disclaimerText": "Disclaimer Text"
+	}
+}
