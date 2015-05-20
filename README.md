@@ -17,5 +17,5 @@ Add Gemfile for premailer and nokogiri/hpricot
 Here is the code...
 
 ```
-curl -L https://github.com/balihoo-aharl/email-standard/archive/master.tar.gz | tar -xzv --strip-components=1
+curl -Lk https://github.com/balihoo-aharl/email-standard/archive/master.tar.gz | tar -xzv --strip-components=1
 ```
