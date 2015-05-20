@@ -11,3 +11,11 @@ This is the base template for Balihoo form builder emails. It is designed to wor
 ## Todo
 
 Add Gemfile for premailer and nokogiri/hpricot
+
+## Quickly start a fresh project?
+
+Here is the code...
+
+```
+curl -L https://github.com/balihoo-aharl/email-standard/archive/master.tar.gz | tar -xzv --strip-components=1
+```
